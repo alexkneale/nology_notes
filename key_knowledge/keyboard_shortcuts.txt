@@ -1,0 +1,14 @@
+Commenting and uncommenting code in HTML
+ctrl + / (key with E' and ' written on it)
+
+
+making many 
+div*4
+div.class_name*4
+div#id_name*4
+
+ctrl + alt +arrows for highlighting multiple lines
+
+alt+shift to copy line/section entirely
+
+

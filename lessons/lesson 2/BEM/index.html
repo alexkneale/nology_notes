@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <button class="btn">Hello</button>
+        </header>
+        <!-- BEM - Block__Element--Modifier-->
+        <!-- Naming convention for classes in HTML-->
+        <!-- what is a block? element? modifier?-->
+        <!-- a block: for example a main element-->
+
+        <main class="main-block">
+            <!-- element: within main-block, in this case all buttons-->
+            <button class="main-block__btn">Click me</button>
+            <button class="main-block__btn">Click me</button>
+            <button class="main-block__btn">Click me</button>
+            <!-- example of a modifier -->
+            <button
+                class="main-block__btn main-block__btn--urgent main-block__btn--large"
+            >
+                Click me
+            </button>
+        </main>
+    </body>
+</html>

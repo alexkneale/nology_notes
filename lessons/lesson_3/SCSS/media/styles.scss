@@ -1,0 +1,64 @@
+// defines what to us whwne media query triggered
+@use "devices";
+
+@mixin phone {
+    // we're only looking at screen size
+    @media only screen and (max-width: devices.$xs) {
+        // this allows us to not define content now, but later in .galler {} (see below).
+        //This way, we don't have to repeat ourselves, but can resuse phone as many times as we want
+        @content;
+    }
+}
+
+@mixin small-screen {
+    @media only screen and (min-width: (devices.$xs + 1px)) and (max-width: devices.$sm) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media only screen and (min-width: (devices.$sm + 1px)) and (max-width: devices.$md) {
+        @content;
+    }
+}
+
+@mixin random {
+    @content;
+}
+
+.gallery {
+    display: grid;
+
+    @include phone {
+        grid-template-columns: 1fr;
+        img {
+            width: 90vw;
+        }
+    }
+
+    @include small-screen {
+        grid-template-columns: 1fr 1fr;
+        img {
+            width: 45vw;
+        }
+    }
+
+    @include tablets {
+        grid-template-columns: repeat(3, 1fr);
+        img {
+            width: 30vw;
+        }
+    }
+}
+
+button {
+    @include phone {
+        font-size: 24px;
+        color: blue;
+    }
+
+    @include tablets {
+        font-size: 40px;
+        color: red;
+    }
+}

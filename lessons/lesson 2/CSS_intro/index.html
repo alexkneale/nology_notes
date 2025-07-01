@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- to link CSS stylesheet to HTML doc, do it in head-->
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>CSS Fundamentals</title>
+    </head>
+    <!-- CSS - Cascading StyleSheets -->
+    <!-- StyleSheets - sheets that will contain styling for our HTML-->
+    <!-- Cascading - refers to priorities/ cascading orders of importance of the selectors (internal vs external, etc)-->
+
+    <!-- Below are three examples of styling in HTML-->
+    <!-- inline-->
+    <!-- internal -->
+    <!-- external -->
+    <!-- so inline > internal or external -->
+
+    <!-- pseudo classes -->
+    <!-- are classes that describe specific state of another class -->
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes -->
+    <!-- some examples -->
+    <!-- a:link-->
+    <!-- a:visited-->
+    <!-- a:active-->
+    <!-- a:hover-->
+
+    <!-- Inline example-->
+    <body>
+        <!-- below we have inline styling-->
+        <!-- It would be difficult to style individual lines when we have millions of them-->
+        <h2 style="color: red" id="myHeading" class="my-heading">Heading</h2>
+        <p class="para">My Paragraph</p>
+        <a href="www.zfakez.come">Website</a>
+        <br />
+        <br />
+        <button>Button</button>
+    </body>
+
+    <!-- internal styling -->
+    <!-- within style, we only have CSS code, note how even commenting is different-->
+    <!-- within inline, there is hierarchy of specificity-->
+    <!-- diagram of specificity https://cscie12.dce.harvard.edu/lecture_notes/2021-spring/20210223/slide7.html -->
+    <!-- if you hover over selector, can see hierarchy score-->
+    <style>
+        /* Element selector*/
+
+        /* id > class in hierarchy*/
+
+        #myHeading {
+            text-decoration: underline;
+            border-color: gold;
+        }
+        /* class > selector in hierarchy*/
+
+        .my-heading {
+            border: 2px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            color: blue;
+            font-style: italic;
+            text-decoration: overline;
+        }
+    </style>
+</html>

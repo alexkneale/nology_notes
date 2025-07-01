@@ -1,0 +1,17 @@
+SCSS - Sassy CSS
+
+SASS is a pre-processor langauga it is compiled/interpreted into CSS
+
+SCSS is the latext syntax used to write SASS
+
+so we can write an scss file, compile it in sass, so it is essentially read as a css file
+So we use SASS as a translator from SCSS to CSS
+
+After installing sass, go to your file directory and run the following:
+
+
+PS C:\Users\Public\Documents\nology_training> cd "lessons\lesson 2\SCSS\intro" 
+PS C:\Users\Public\Documents\nology_training\lessons\lesson 2\SCSS\intro> sass --watch --no-source-map styles.scss:styles.css
+[2025-06-24 17:51] Compiled styles.scss to styles.css.
+Sass is watching for changes. Press Ctrl-C to stop.
+

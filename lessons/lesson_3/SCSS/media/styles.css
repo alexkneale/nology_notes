@@ -1,0 +1,40 @@
+.gallery {
+  display: grid;
+}
+@media only screen and (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .gallery img {
+    width: 90vw;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery img {
+    width: 45vw;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery img {
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  button {
+    font-size: 24px;
+    color: blue;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+  button {
+    font-size: 40px;
+    color: red;
+  }
+}

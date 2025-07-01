@@ -1,0 +1,43 @@
+/* below,, nav and main have same styles*/
+/* this goes agains DRY (dont repeat yourself)*/
+/* mixin allow you to define styles that can be resued in your stylesheet*/
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid gold;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid gold;
+}
+
+.btn--sm {
+  font-size: 10px;
+}
+.btn--md {
+  font-size: 24px;
+}
+.btn--lg {
+  font-size: 40px;
+}
+
+.chip {
+  border-radius: 20px;
+}
+.chip--sm {
+  font-size: 10px;
+}
+.chip--md {
+  font-size: 24px;
+}
+.chip--lg {
+  font-size: 40px;
+}

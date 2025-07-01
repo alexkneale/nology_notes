@@ -1,0 +1,51 @@
+.container {
+    /* flex display makes container a flex container*/
+    /* now container behavse as inline element (expand out horizontally)*/
+    display: flex;
+    border: 3px solid blue;
+    height: 1000px;
+    /* this dictates how flex items are displayed within container*/
+    /* justify-content: space-around;
+    justify-content: center;
+    justify-content: space-evenly; */
+    /* justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: center; */
+    /* flex direction switches x-y with y-x (and all subsequent commands)*/
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.item {
+    min-width: 150px;
+}
+
+div {
+    /* from outwards to inwards*/
+
+    /* border is around padding*/
+    border: 1px solid green;
+    /* padding is around text */
+    padding: 20px;
+}
+
+#myDiv {
+    /* margin is space between elements */
+    /* margin is outside of border */
+
+    /* all around the same */
+    margin: 20px;
+
+    /* clockwise, starting from north */
+    margin: 10px 1px 50px 5px;
+
+    /* NS and EW */
+    margin: 10px 50px;
+
+    margin-top: 20px;
+}
+
+.avocado {
+    margin: 20px 1px 50px 5px;
+}

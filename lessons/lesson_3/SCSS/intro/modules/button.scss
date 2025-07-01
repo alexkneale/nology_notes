@@ -1,0 +1,20 @@
+/* module for styling of button*/
+@use "palette";
+.btn {
+    font-family: "Times New Roman", Times, serif;
+
+    /* and now we deal with elements under block btn*/
+    &__border {
+        border-style: dashed;
+        border-width: 10px;
+        background-color: palette;
+
+        &--blue {
+            border-color: blue;
+        }
+
+        &--red {
+            border-color: red;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+/* modules */
+/* way to break down stylesheet, to make variable declaration more efficient */
+/* here we declare tons of variables (in this case colours) */
+
+/* SCSS HEX */
+$jasmine: #ffd275ff;
+$earth-yellow: #e8ae68ff;
+$chamoisee: #a57f60ff;
+$buff: #e3a587ff;
+$jasper: #db5a42ff;
+
+/* SCSS HSL */
+$jasmine: hsla(40, 100%, 73%, 1);
+$earth-yellow: hsla(33, 74%, 66%, 1);
+$chamoisee: hsla(27, 28%, 51%, 1);
+$buff: hsla(20, 62%, 71%, 1);
+$jasper: hsla(9, 68%, 56%, 1);
+
+/* SCSS RGB */
+$jasmine: rgba(255, 210, 117, 1);
+$earth-yellow: rgba(232, 174, 104, 1);
+$chamoisee: rgba(165, 127, 96, 1);
+$buff: rgba(227, 165, 135, 1);
+$jasper: rgba(219, 90, 66, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(
+    0deg,
+    #ffd275ff,
+    #e8ae68ff,
+    #a57f60ff,
+    #e3a587ff,
+    #db5a42ff
+);
+$gradient-right: linear-gradient(
+    90deg,
+    #ffd275ff,
+    #e8ae68ff,
+    #a57f60ff,
+    #e3a587ff,
+    #db5a42ff
+);
+$gradient-bottom: linear-gradient(
+    180deg,
+    #ffd275ff,
+    #e8ae68ff,
+    #a57f60ff,
+    #e3a587ff,
+    #db5a42ff
+);
+$gradient-left: linear-gradient(
+    270deg,
+    #ffd275ff,
+    #e8ae68ff,
+    #a57f60ff,
+    #e3a587ff,
+    #db5a42ff
+);
+$gradient-top-right: linear-gradient(
+    45deg,
+    #ffd275ff,
+    #e8ae68ff,
+    #a57f60ff,
+    #e3a587ff,
+    #db5a42ff
+);
+$gradient-bottom-right: linear-gradient(
+    135deg,
+    #ffd275ff,
+    #e8ae68ff,
+    #a57f60ff,
+    #e3a587ff,
+    #db5a42ff
+);
+$gradient-top-left: linear-gradient(
+    225deg,
+    #ffd275ff,
+    #e8ae68ff,
+    #a57f60ff,
+    #e3a587ff,
+    #db5a42ff
+);
+$gradient-bottom-left: linear-gradient(
+    315deg,
+    #ffd275ff,
+    #e8ae68ff,
+    #a57f60ff,
+    #e3a587ff,
+    #db5a42ff
+);
+$gradient-radial: radial-gradient(
+    #ffd275ff,
+    #e8ae68ff,
+    #a57f60ff,
+    #e3a587ff,
+    #db5a42ff
+);

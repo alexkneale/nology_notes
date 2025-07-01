@@ -1,0 +1,73 @@
+.light-container {
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  width: 95 vw;
+  height: 95 vh;
+}
+.light-container .light__block {
+  flex: 1;
+}
+@media only screen and (max-width: 600px) {
+  .light-container {
+    flex-direction: column;
+  }
+  .light-container .light__block--color1 {
+    background-color: red;
+    border-radius: 50%;
+  }
+  .light-container .light__block--color2 {
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  .light-container .light__block--color3 {
+    background-color: green;
+    border-radius: 50%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .light-container {
+    flex-direction: row;
+  }
+  .light-container .light__block--color1 {
+    background-color: red;
+    border-radius: 50%;
+  }
+  .light-container .light__block--color2 {
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  .light-container .light__block--color3 {
+    background-color: green;
+    border-radius: 50%;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .light-container {
+    flex-direction: row;
+  }
+  .light-container .light__block--color1 {
+    background-color: red;
+    border-radius: 50%;
+  }
+  .light-container .light__block--color1:hover {
+    border-color: white-space;
+    border-width: 2px;
+  }
+  .light-container .light__block--color2 {
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  .light-container .light__block--color2:hover {
+    border-color: white-space;
+    border-width: 2px;
+  }
+  .light-container .light__block--color3 {
+    background-color: green;
+    border-radius: 50%;
+  }
+  .light-container .light__block--color3:hover {
+    border-color: white-space;
+    border-width: 2px;
+  }
+}

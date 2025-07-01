@@ -1,0 +1,87 @@
+@mixin phone {
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media only screen and (min-width: 901px) {
+        @content;
+    }
+}
+
+.light-container {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    width: 95 vw;
+    height: 95 vh;
+
+    .light__block {
+        flex: 1; // Each block takes equal vertical space
+    }
+
+    @include phone {
+        flex-direction: column;
+        .light__block--color1 {
+            background-color: red;
+            border-radius: 50%;
+        }
+        .light__block--color2 {
+            background-color: yellow;
+            border-radius: 50%;
+        }
+        .light__block--color3 {
+            background-color: green;
+            border-radius: 50%;
+        }
+    }
+
+    @include tablet {
+        flex-direction: row;
+        .light__block--color1 {
+            background-color: red;
+            border-radius: 50%;
+        }
+        .light__block--color2 {
+            background-color: yellow;
+            border-radius: 50%;
+        }
+        .light__block--color3 {
+            background-color: green;
+            border-radius: 50%;
+        }
+    }
+
+    @include desktop() {
+        flex-direction: row;
+        .light__block--color1 {
+            background-color: red;
+            border-radius: 50%;
+            &:hover {
+                border-color: white-space;
+                border-width: 2px;
+            }
+        }
+        .light__block--color2 {
+            background-color: yellow;
+            border-radius: 50%;
+            &:hover {
+                border-color: white-space;
+                border-width: 2px;
+            }
+        }
+        .light__block--color3 {
+            background-color: green;
+            border-radius: 50%;
+            &:hover {
+                border-color: white-space;
+                border-width: 2px;
+            }
+        }
+    }
+}

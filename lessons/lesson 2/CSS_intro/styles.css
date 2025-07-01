@@ -1,0 +1,34 @@
+/* universal selector, weakest selector in hierarchy*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.para {
+    color: lightcoral;
+}
+
+/* below is an example of a pseudo class selector */
+
+button:hover {
+    background-color: red;
+}
+
+a:link {
+    color: bisque;
+}
+
+a:hover {
+    cursor: help;
+}
+
+/* color and border changes after visiting website*/
+a:visited {
+    color: blueviolet;
+    border: 2px solid salmon;
+}
+
+/* color changes when 'pulling' on website*/
+a:active {
+    color: gold;
+}

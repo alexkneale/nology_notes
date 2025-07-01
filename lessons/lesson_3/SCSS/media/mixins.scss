@@ -1,0 +1,16 @@
+//modifiers, syntax given below
+// essentially a function , but with inputs (placeholders)
+// @mixin mixin-name($placehold, ...) {}
+// can also set default values (see lg below)
+@mixin sizing-modifier($sm, $md, $lg: 50px) {
+    &--sm {
+        font-size: $sm;
+    }
+    &--md {
+        font-size: $md;
+    }
+
+    &--lg {
+        font-size: $lg;
+    }
+}

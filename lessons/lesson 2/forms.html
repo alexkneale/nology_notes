@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- forms -->
+        <!-- every single login page is a form-->
+        <!-- action controls where data is sent when form submitted-->
+        <!-- POST -->
+        <form action="insert a url here" method="POST">
+            <!-- name attribute is reference by which value posted goes by, so should always give names-->
+            <label for="">Name:</label>
+            <input name="fullName" id="name" type="text" required />
+
+            <label for="age">Age</label>
+            <input name="age" type="number" id="age" optional />
+
+            <label for="textArea">Text: </label>
+            <textarea
+                name=""
+                id="textArea"
+                placeholder="Type some text here..."
+            >
+Type some text</textarea
+            >
+            <select name="country" id="country">
+                <option value="eng">England</option>
+                <option value="wal">Wales</option>
+                <option value="sco">Scotland</option>
+                <option value="ire">Irelands</option>
+            </select>
+            <input type="submit" name="" id="" />
+        </form>
+
+        <!-- there is a bit of form validation (such as with emails)-->
+    </body>
+</html>

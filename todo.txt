@@ -1,0 +1,31 @@
+to do
+
+
+weekend
+
+- weekly email to remi
+- website touches (bootstrap, tailwind, adding javascript, 
+go through awesome documentation and see what you can do)
+- chatgpt exercises with scss
+- last javascript qa
+- javascript challenges
+- flexbox froggy
+
+
+javascript exercises 
+
+- personal page/portfolio due monday 31
+- maybe look at google font, bootstrap, tailwind, adding javascript
+- https://docs.github.com/en/pages/quickstart
+- https://webaim.org/resources/contrastchecker/
+- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+- tailwindcss
+
+j js cheatsheet https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Cheatsheet 
+
+- code wars for interview questions
+- https://github.com/nology-tech/awesome-resources
+- practicing flexbox https://flexboxfroggy.com/
+- go through HTML documentation
+- weekly update email (friday)
+

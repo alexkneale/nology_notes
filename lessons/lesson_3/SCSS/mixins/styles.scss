@@ -1,0 +1,62 @@
+/* below,, nav and main have same styles*/
+/* this goes agains DRY (dont repeat yourself)*/
+/* mixin allow you to define styles that can be resued in your stylesheet*/
+
+// .nav {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+
+//     border: 2px solid gold;
+//     padding: 20px;
+//     margin-bottom: 20px;
+// }
+
+// .main {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+
+//     border: 2px solid gold;
+//     padding: 20px;
+//     margin-bottom: 20px;
+// }
+
+// MIXIN
+
+@use "mixins";
+
+@mixin default-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin default-spacing {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+@mixin default-border {
+    border: 2px solid gold;
+}
+
+.nav {
+    @include default-flex;
+    @include default-spacing;
+    @include default-border;
+}
+
+.main {
+    @include default-flex;
+    @include default-spacing;
+    @include default-border;
+}
+
+.btn {
+    @include mixins.sizing-modifier(10px, 24px, 40px);
+}
+
+.chip {
+    border-radius: 20px;
+    @include mixins.sizing-modifier(10px, 24px, 40px);
+}

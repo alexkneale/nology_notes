@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- relationship bewteen html and head/body, called parent-child relationship
+     or DOM (document object model) is representation of all elements of html page
+     -->
+
+    <!-- whenever there is nesting, there is a parent-child relationship -->
+    <!-- head and body have sibling relationship (same level)-->
+    <!-- shortcuts ! + enter, gets skeleton html file -->
+    <!-- difference between tags and elements-->
+    <!-- tags are individual <p>, <h1> etc, elements are everything within tags (including tags)-->
+
+    <head>
+        <!-- meta information here -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Recap</title>
+        <link rel="stylesheet" href="" />
+    </head>
+    <body>
+        <!-- information visible on page here -->
+        <h1>Web Recap</h1>
+        <h6>Heading 6</h6>
+        <p>this is a paragraph</p>
+        <p>this is the <a href="code_along.html"> link </a> to our website</p>
+        <!-- inline vs block -->
+        <!-- div: example of non-semantic element, DOES NOT describe its content -->
+        <!-- div is an example of a block element: always starts a new line, and takes as much horizontal space as it can-->
+        <div style="border: 1px solid black">Hello World</div>
+
+        <!-- span: inline element (takes as little space as is required, no more)-->
+        <span style="border: 1px solid black"> This is a span</span>
+        <!-- list of INLINE and Block elements -->
+        <!-- https://www.w3schools.com/html/html_blocks.asp -->
+
+        <!-- semantic elementsL those that desciribe what is contained within them-->
+        <!-- https://www.w3schools.com/html/html5_semantic_elements.asp -->
+
+        <header>
+            <h1>Main Heading</h1>
+            <h3>Sub Heading</h3>
+        </header>
+        <nav>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+        <main>
+            <div>
+                <section>Section 1</section>
+                <section>Section 2</section>
+            </div>
+            <article>Article</article>
+        </main>
+        <footer>
+            <a href=""> Footer Link</a>
+            About
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+.block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-block__btn {
+    font-family: "Times New Roman", Times, serif;
+}

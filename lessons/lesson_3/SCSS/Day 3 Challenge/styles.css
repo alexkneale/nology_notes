@@ -1,0 +1,47 @@
+.flag-section {
+  display: grid;
+  width: 95vw;
+  height: 95vh;
+}
+@media only screen and (max-width: 600px) {
+  .flag-section {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .flag-section .flag__block--color1 {
+    background-color: black;
+  }
+  .flag-section .flag__block--color2 {
+    background-color: #dd0400;
+  }
+  .flag-section .flag__block--color3 {
+    background-color: #f5d01a;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .flag-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .flag-section .flag__block--color1 {
+    background-color: black;
+  }
+  .flag-section .flag__block--color2 {
+    background-color: #f5d01a;
+  }
+  .flag-section .flag__block--color3 {
+    background-color: #dd0400;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .flag-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .flag-section .flag__block--color1 {
+    background-color: #369f67;
+  }
+  .flag-section .flag__block--color2 {
+    background-color: white;
+  }
+  .flag-section .flag__block--color3 {
+    background-color: #f28840;
+  }
+}

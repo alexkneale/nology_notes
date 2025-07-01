@@ -1,0 +1,67 @@
+/* to import module called palette*/
+/* modules */
+/* way to break down stylesheet, to make variable declaration more efficient */
+/* here we declare tons of variables (in this case colours) */
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+/* to import module called palette*/
+/* module for styling of button*/
+.btn {
+  font-family: "Times New Roman", Times, serif;
+  /* and now we deal with elements under block btn*/
+}
+.btn__border {
+  border-style: dashed;
+  border-width: 10px;
+  background-color: palette;
+}
+.btn__border--blue {
+  border-color: blue;
+}
+.btn__border--red {
+  border-color: red;
+}
+
+/* variables: named.labelled piece of information/data that we save in memory to use later*/
+/* to create a variable in SCSS: $ */
+/* in scss, variables are named using kebab-casing*/
+/* so above, we've stored the color under name jasper, so can now refer to it later*/
+/* In CSS, varibales are declared with --, ie --variable-name*/
+/* if you want to declare variable in scss using css notation, must place inside root */
+:root {
+  --secondary: red;
+}
+
+h1 {
+  /* if variable comes from module, have to put module name when you use variable*/
+  color: rgb(255, 210, 117);
+  /* can also declare variables locally, but note it will not be accessible globally */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* great thing about scss, can group all things that are in same block together*/
+/* this is a lot easier (less writing) than CSS*/
+.btn {
+  font-family: "Times New Roman", Times, serif;
+  /* and now we deal with elements under block btn*/
+}
+.btn__border {
+  border-style: dashed;
+  border-width: 10px;
+}
+.btn__border--blue {
+  border-color: blue;
+}
+.btn__border--red {
+  border-color: red;
+}
+
+/* using ampersand (&) with pseudo classes*/
+.main a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.main a:visited {
+  color: blue;
+}
