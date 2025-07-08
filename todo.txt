@@ -23,9 +23,39 @@ javascript exercises
 
 j js cheatsheet https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Cheatsheet 
 
+ts help
+- https://vite.dev/guide/
+- setting up vite
+
+event listeners
+- https://www.w3schools.com/jsref/dom_obj_event.asp
+
+game project-
+deploying vite to github pages
+- https://vite.dev/guide/static-deploy
+
+
+in folder of choice run:
+1. npm create vite@latest
+2. say yes to installation
+3. project name
+4. choose vanilla framework 
+5. typescript
+6. then follow instructions in terminal (cd {project_name}, npm install, npm run dev)
+
 - code wars for interview questions
 - https://github.com/nology-tech/awesome-resources
 - practicing flexbox https://flexboxfroggy.com/
 - go through HTML documentation
 - weekly update email (friday)
 
+
+
+git branch -r \
+  | grep -v '\->' \
+  | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" \
+  | while read remote; do \
+      git branch --track "${remote#origin/}" "$remote"; \
+    done
+git fetch --all
+git pull --all

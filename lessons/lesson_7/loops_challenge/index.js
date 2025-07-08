@@ -42,13 +42,19 @@ sum(10);
 //CODE HERE
 
 const badger = "small black and white animal.";
-const pattern = /[a-z]/;
 
 const buildNewString = (string) => {
     let newString = "";
+    let alphabet = /[a-yA-Y]/;
     for (let i = 0; i < string.length; i++) {
         if (i % 2 === 0) {
-            newString += string[i];
+            if (alphabet.test(string[i])) {
+                newString += String.fromCharCode(string[i].charCodeAt(0) + 1);
+            } else if (string[i] === "z") {
+                newString += "a";
+            } else if (string[i] === "Z") {
+                newString += "A";
+            } else newString += string[i];
             continue;
         }
         newString += string[i].toUpperCase();
@@ -78,27 +84,19 @@ buildNewString(badger);
 
 //CODE HERE
 
-const string = "Zoran";
-// expect Apso
+const string = "MartynA";
+// expect Zorn
 
 const removeVowels = (str) => {
     let newString = "";
     let letters = /[lmr]/i;
     let pattern = /[aeiou]/i; //i makes the case insensitive
-    let alphabet = /[a-yA-Y]/;
     for (let i = 0; i < str.length; i++) {
         if (pattern.test(str[i]) && !letters.test(str[i + 1])) {
             continue;
         }
-        if (alphabet.test(str[i])) {
-            newString += String.fromCharCode(str[i].charCodeAt(0) + 1);
-        } else if (str[i] === "z") {
-            newString += "a";
-        } else if (str[i] === "Z") {
-            newString += "A";
-        } else {
-            newString += str[i];
-        }
+
+        newString += str[i];
     }
     console.log(newString);
 };
