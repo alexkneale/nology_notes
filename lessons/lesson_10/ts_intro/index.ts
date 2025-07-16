@@ -29,7 +29,7 @@ const numbers: number[] = [2, 4, 6, 8];
 
 const myArr: unknown[] = [true, -1, "a", null, "b"];
 
-myArr[0]; // Object is of type 'unknown' :S
+myArr[0]; // Object is of type 'unknown' even though it is rly a boolean
 
 // casting with as
 // - str is now string[]

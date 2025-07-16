@@ -1,0 +1,27 @@
+h1 {
+    color: slateblue;
+}
+
+#foodContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px;
+}
+
+.junk,
+.healthy {
+    border: 2px solid sandybrown;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        margin: 10px;
+    }
+}
+
+.healthy {
+    border: 2px solid green;
+}

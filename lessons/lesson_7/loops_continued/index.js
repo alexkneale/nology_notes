@@ -1,6 +1,6 @@
 // break
 // in loops might want to break from iteration/ for loop
-// without exitting completely from whole process your are running
+// without exitting completely from whole process you are running
 
 // continue
 // way of continuing process after checking certain condition
@@ -28,6 +28,7 @@ const charCounter = () => {
 
         if (counter > 15) {
             return "Char limit reached";
+            // return exits function
         }
         counter += 1;
         console.log(counter);

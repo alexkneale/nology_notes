@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TS Testing - FoodShop</title>
+    </head>
+    <body>
+        <header>
+            <h1>FoodShop</h1>
+        </header>
+
+        <form id="form">
+            <label for="sortFood">Filter By:</label>
+            <select name="sortFood" id="sortFood">
+                <option value="all">All</option>
+                <option value="healthy">Healthy</option>
+                <option value="junk">Junk</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <section id="foodContainer"></section>
+    <script type="module" src="./src/ts/main.ts"></script>
+</html>

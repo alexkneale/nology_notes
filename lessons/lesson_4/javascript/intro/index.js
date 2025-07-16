@@ -68,7 +68,7 @@ console.log(++value);
 // when you have +, default is to try to attempt string concatenation
 // so even if you pass a string and a number with +, will get a string
 
-// when you have - or any other mathematical operator working with strings, javascript will try to convert strings to numbers and then run operation
+// when you have - or any other mathematical operator (apart from +) working with strings, javascript will try to convert strings to numbers and then run operation
 
 console.log("1" + "2"); // '12'
 console.log("1" - "2"); // -1

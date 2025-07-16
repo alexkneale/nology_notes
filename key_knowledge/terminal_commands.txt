@@ -1,0 +1,17 @@
+Running cypress
+
+create a vite config 
+
+touch vite.config.ts 
+
+check lesson 14 for vite.config.ts content
+
+npm i
+
+run dev:
+
+npm run dev
+
+run test: 
+
+npm run test:jest
